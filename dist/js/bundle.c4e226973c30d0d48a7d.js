@@ -63,32 +63,39 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-function a (argument) {
+"use strict";
+// import tpl from './layer.html';
 
+function layer() {
+    return {
+        name: 'layer',
+        tpl: tpl
+    };
 }
+
+/* harmony default export */ __webpack_exports__["a"] = (layer);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-function hello (a) {
-    alert(a)
-}
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_layer_layer_js__ = __webpack_require__(0);
 
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(1);
-module.exports = __webpack_require__(0);
+const App = function () {
+    console.log(__WEBPACK_IMPORTED_MODULE_0__components_layer_layer_js__["a" /* default */]);
+};
 
+new App();
 
 /***/ })
 /******/ ]);
